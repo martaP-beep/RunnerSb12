@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     int coins = 0;
 
     public Immortality immortality;
+    public Magnet magnet;
 
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
     void InitializeGame()
     {
         immortality.isActive = false;
+        magnet.isActive = false;
 
         inGame = true;
         restart.SetActive(false);
@@ -91,5 +93,20 @@ public class GameManager : MonoBehaviour
     void CancelImmortality()
     {
         immortality.isActive = false;
+    }
+
+    public void MagnetCollected()
+    {
+        if (magnet.isActive)
+        {
+            CancelMagnet();
+            CancelInvoke("CancelMagnet");
+        }
+        magnet.isActive = true; 
+        Invoke("CancelMagnet", magnet.GetTime());
+    }
+    void CancelMagnet()
+    {
+        magnet.isActive = false;
     }
 }

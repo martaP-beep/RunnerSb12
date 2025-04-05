@@ -745,6 +745,7 @@ MonoBehaviour:
   restart: {fileID: 379707953}
   coinsText: {fileID: 1003916814}
   immortality: {fileID: 11400000, guid: 8047623a0c31b04469ad55c9705032a2, type: 2}
+  magnet: {fileID: 0}
 --- !u!4 &582696069
 Transform:
   m_ObjectHideFlags: 0
