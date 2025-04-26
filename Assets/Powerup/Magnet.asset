@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   time: {fileID: 11400000, guid: 4ddf8e2534af7f644beaee93bebe2c40, type: 2}
+  currentLevel: 1
+  maxLevel: 3
+  UpgradeCosts: 0300000004000000
   range: {fileID: 11400000, guid: e9d060d1326989749994a31a7c700030, type: 2}
   speed: {fileID: 11400000, guid: 5c0df0a96c247f540908ad23e899fdef, type: 2}

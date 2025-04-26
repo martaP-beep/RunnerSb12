@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cf52505648fa3429c3f2f85cc42b88, type: 3}
   m_Name: MagnetSpeed
   m_EditorClassIdentifier: 
-  value: 0.2
+  value:
+  - 0.2
+  - 0.25
+  - 0.3
